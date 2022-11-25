@@ -17,17 +17,6 @@ export default {
       cart: this.$store.cart
     };
   },
-  provide() {
-    return {
-      isLoggedIn: this.isLoggedIn,
-      products: this.products,
-      cart: this.cart,
-      addProductToCart: this.addProductToCart,
-      removeProductFromCart: this.removeProductFromCart,
-      login: this.login,
-      logout: this.logout,
-    };
-  },
   methods: {
     login() {
       this.isLoggedIn = true;
